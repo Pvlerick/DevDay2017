@@ -1,0 +1,7 @@
+dotnet new sln -n Demo
+dotnet new webapi -o WebApp
+dotnet sln add WebApp\WebApp.csproj
+dotnet new classlib -o Models
+dotnet sln add Models\Models.csproj
+
+Duke Nukem quotes!

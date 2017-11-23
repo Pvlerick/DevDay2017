@@ -1,0 +1,13 @@
+dotnet new sln -n Demo2
+dotnet new webapi -o WebApp
+dotnet sln add WebApp\WebApp.csproj
+dotnet new classlib -o Models
+dotnet sln add Models\Models.csproj
+dotnet new classlib -o Infra
+dotnet sln add Infra\Infra.csproj
+
+Autofac en dernier
+
+docker build -t dqi .
+docker run -d -p 8080:8080 --name dq dqi
+http://172.28.128.3:8080/

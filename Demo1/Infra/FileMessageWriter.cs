@@ -1,17 +1,18 @@
-﻿using Hello;
+﻿using Domain;
+using System;
 using System.IO;
 
 namespace Infra
 {
     public class FileMessageWriter : IMessageWriter
     {
-        private readonly string filePath;
+        private readonly string outputFile;
 
-        public FileMessageWriter(string filePath)
+        public FileMessageWriter(string outputFile)
         {
-            this.filePath = filePath;
+            this.outputFile = outputFile ?? throw new ArgumentNullException(nameof(outputFile));
         }
 
-        public void WriteLine(string message) => File.WriteAllLines(this.filePath, new[] { message });
+        public void WriteLine(string message) => File.AppendAllLines(this.outputFile, new[] { message });
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Hello
+﻿namespace Domain
 {
     public interface IMessageWriter
     {

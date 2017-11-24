@@ -1,7 +1,7 @@
 dotnet new sln -n Demo1
 dotnet new console -o EntryPoint
 dotnet sln add EntryPoint\EntryPoint.csproj
-dotnet new classlib -o Hello
-dotnet sln add Hello\Hello.csproj
+dotnet new classlib -o Domain
+dotnet sln add Domain\Domain.csproj
 dotnet new classlib -o Infra
 dotnet sln add Infra\Infra.csproj

@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#DevaDay Stuff
+DD2017-13h30.mp4
+TODO.txt
+
 # User-specific files
 *.suo
 *.user

@@ -1,6 +1,6 @@
 dotnet new sln -n Demo1
-dotnet new console -o UI
-dotnet sln add UI\UI.csproj
+dotnet new console -o EntryPoint
+dotnet sln add EntryPoint\EntryPoint.csproj
 dotnet new classlib -o Hello
 dotnet sln add Hello\Hello.csproj
 dotnet new classlib -o Infra

@@ -10,4 +10,5 @@ Autofac en dernier
 
 docker build -t dqi .
 docker run -d -p 8080:8080 --name dq dqi
-http://172.28.128.3:8080/
+docker start dq
+curl http://172.28.128.3:8080/
